@@ -17,6 +17,11 @@ class ServiceProvider extends LaravelServiceProvider
             __DIR__ . '/../../config/achievements.php' => config_path('achievements.php'),
         ], 'config');
 
+        $this->publishes([
+            __DIR__.'/../../database/migrations' => database_path('/migrations'),
+        ], 'migrations');
+
+
         $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
     }
 
