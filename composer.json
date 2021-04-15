@@ -1,0 +1,29 @@
+{
+  "name": "tizis/achievements",
+  "description": "",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roman Yepanchenko",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": "^7.1|^8.0",
+    "illuminate/support": "^8.0",
+    "illuminate/database": "^8.0",
+    "illuminate/http": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Achievements\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "achievements\\ServiceProvider"
+      ]
+    }
+  }
+}
