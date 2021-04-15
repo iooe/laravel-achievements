@@ -31,7 +31,7 @@ class User extends Authenticatable implements AchievementableContract {
 ```   
 
 
-#Exmaple
+#Examples
 
 ```php
 
