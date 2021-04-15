@@ -5,7 +5,7 @@
   "authors": [
     {
       "name": "Roman Yepanchenko",
-      "homepage": "https://github.com/tizis"
+      "email": ""
     }
   ],
   "require": {
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Achievements\\": "src/"
+      "tizis\\achievements\\": "src/"
     }
   },
   "extra": {
