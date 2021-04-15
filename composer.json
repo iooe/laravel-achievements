@@ -22,7 +22,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "achievements\\ServiceProvider"
+        "tizis\\achievements\\Providers\\ServiceProvider"
       ]
     }
   }
