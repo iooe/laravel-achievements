@@ -16,7 +16,7 @@ class AchievementsProgress extends Migration
             $table->integer('points')->default(0);
             $table->dateTime('unlocked_at')->nullable();
             $table->timestamps();
-            $table->index(['user_id', 'achievement_id']);
+            $table->unique(['user_id', 'achievement_id']);
         });
     }
 
