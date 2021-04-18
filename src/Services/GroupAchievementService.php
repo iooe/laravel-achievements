@@ -2,14 +2,14 @@
 
 namespace tizis\achievements\Services;
 
-use Illuminate\Database\Eloquent\Model;
 use tizis\achievements\Contracts\Group;
+use tizis\achievements\Contracts\HasAchievements;
 
 class GroupAchievementService
 {
-    protected $user;
+    protected HasAchievements $user;
 
-    public function __construct(Model $user)
+    public function __construct(HasAchievements $user)
     {
         $this->user = $user;
     }

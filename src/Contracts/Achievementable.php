@@ -2,7 +2,7 @@
 
 namespace tizis\achievements\Contracts;
 
-interface Achievementable
+interface HasAchievements
 {
     public function achievements(): \Illuminate\Database\Eloquent\Relations\BelongsToMany;
 

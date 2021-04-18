@@ -5,7 +5,7 @@ namespace tizis\achievements\Traits;
 use tizis\achievements\Contracts\Achievement;
 use tizis\achievements\Contracts\Group;
 
-trait Achievementable
+trait InteractsWithAchievements
 {
     public function achievements(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {

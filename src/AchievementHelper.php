@@ -2,18 +2,18 @@
 
 namespace tizis\achievements;
 
-use tizis\achievements\Contracts\Achievementable;
+use tizis\achievements\Contracts\HasAchievements;
 
 class AchievementHelper
 {
-    public static function count(Achievementable $user)
+    public static function count(HasAchievements $user)
     {
         return $user->achievements()
             ->wherePivot('unlocked_at', '!=', null)
             ->count();
     }
 
-    public static function lastUnlockedAchievements(Achievementable $user, int $take = 10)
+    public static function lastUnlockedAchievements(HasAchievements $user, int $take = 10)
     {
         return $user->achievements()
             ->wherePivot('unlocked_at', '!=', null)
@@ -22,7 +22,7 @@ class AchievementHelper
             ->get();
     }
 
-    public static function lastUnlockedAchievement(Achievementable $user)
+    public static function lastUnlockedAchievement(HasAchievements $user)
     {
         return $user->achievements()
             ->wherePivot('unlocked_at', '!=', null)
@@ -30,7 +30,7 @@ class AchievementHelper
             ->first();
     }
 
-    public static function getUnlockedUniqueAchievementsOfUser(Achievementable $user)
+    public static function getUnlockedUniqueAchievementsOfUser(HasAchievements $user)
     {
         $collection = collect();
 
@@ -63,7 +63,7 @@ class AchievementHelper
         return $collection;
     }
 
-    public static function unlockedAchievementsOnlyGroups(Achievementable $user)
+    public static function unlockedAchievementsOnlyGroups(HasAchievements $user)
     {
         $collection = collect();
 

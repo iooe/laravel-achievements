@@ -22,11 +22,11 @@ php artisan vendor:publish --provider="tizis\achievements\Providers\ServiceProvi
 
 
 ```php
-use tizis\achievements\Contracts\Achievementable as AchievementableContract;
-use tizis\achievements\Traits\Achievementable;
+use tizis\achievements\Contracts\HasAchievements;
+use tizis\achievements\Traits\InteractsWithAchievements;
 
-class User extends Authenticatable implements AchievementableContract {
-	use Achievementable;
+class User extends Authenticatable implements HasAchievements {
+	use InteractsWithAchievements;
 }
 ```   
 
