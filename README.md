@@ -1,3 +1,6 @@
+This package can be used to add interacts with achievements on any model you have in your application.
+
+
 ```
     "php": "^7.1|^8.0",
     "illuminate/support": "^8.0",
