@@ -26,6 +26,6 @@ class AchievementsGroupsNamespaces extends Migration
      */
     public function down()
     {
-        //
+         Schema::drop('achievements_groups_namespaces');
     }
 }
