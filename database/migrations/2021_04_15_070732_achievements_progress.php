@@ -27,6 +27,6 @@ class AchievementsProgress extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('achievements_progress');
     }
 }
