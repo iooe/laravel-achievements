@@ -31,6 +31,6 @@ class AchievementsGroups extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('achievements_groups');
     }
 }
